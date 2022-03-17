@@ -5,7 +5,7 @@ const injectStore = (_store) => {
   console.log("FROM STORE", store.getState());
 };
 const instanceToken = axios.create({
-  baseURL: "http://127.0.0.1:8000/api",
+  baseURL: "https://salty-temple-87001.herokuapp.com/api",
 });
 
 instanceToken.interceptors.request.use((config) => {
